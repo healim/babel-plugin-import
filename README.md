@@ -110,11 +110,12 @@ For Example:
 [
   {
     "libraryName": "antd",
-    "libraryDirectory": "lib",   // default: lib
-    "style": true
+    "libraryDirectory": "es",   // default: es
+    "style": "css"
   },
   {
-    "libraryName": "antd-mobile"
+    "libraryName": "antd-mobile",
+    "style": "css"
   },
 ]
 ```
@@ -125,8 +126,8 @@ For Example:
 ```javascrit
 // .babelrc
 "plugins": [
-  ["import", { "libraryName": "antd", "libraryDirectory": "lib"}, "ant"],
-  ["import", { "libraryName": "ant-mobile", "libraryDirectory": "lib"}, "ant-mobile"]
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css"}, "antd"],
+    ["import", { "libraryName": "antd-mobile", "style": "css"}, "antd-mobile"]
 ]
 ```
 
